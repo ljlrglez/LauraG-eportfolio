@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laura Gonzalez, Portfolio</title>
+	<meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+	<link rel = "stylesheet" type="text/css" href="static/css/main.css" />
+	<link rel="stylesheet" href="static/css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- -->
+<style>
+    @media screen and (min-width: 676px) {
+        .modal-dialog {
+          min-width: 50px;
+          max-width: 630px; /* New width for default modal */
+        }
+    }
+</style>
+
+
+
+</head>
+<body  class ="mybody">       <!-- style="background-color:#4FD2F9;"   bgcolor="4FD2F9" -->
+	<div id="general">
+		<div id="logo">
+			<img src= "static/img/web-banner.png" alt="Laura Logo" width="970">
+		</div>
+		<div id="navegacion">
+        <div class="w3-container"> 
+         <div class="w3-bar w3-blue">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>       
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Gallery <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-blue">
+                    <a href="" class="w3-bar-item w3-button w3-mobile"data-toggle="modal" data-target="#myThumb"> Thumbnail Image</a>      
+                    <a href="" class="w3-bar-item w3-button w3-mobile"data-toggle="modal" data-target="#myRaster">Raster Image</a>
+                    <a href="" class="w3-bar-item w3-button w3-mobile"data-toggle="modal" data-target="#myVector">Vector Image</a>
+                    <a href="" class="w3-bar-item w3-button w3-mobile"data-toggle="modal" data-target="#myAudio1">Audio Record</a>
+                </div>
+            </div>    
+            <a href="AboutMe.html" class="w3-bar-item w3-button w3-mobile w3-blue">About Me</a> 
+            <a href="contact.html" class="w3-bar-item w3-button w3-mobile w3-blue">Contact</a>       
+          </div>  <!-- w3-bar w3-blue -->
+        </div>  <!-- w3-conteiner -->  
+			
+	  </div> <!-- navegacion -->
+
+    <!-- Modal Thumb -->
+    <div class="modal fade" id="myThumb" role="dialog">
+      <div class="modal-dialog modal-sm" id = "myh1" style=" color:#2F5796">    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Thumbnail Image </h4>
+          </div>
+          <div class="modal-body">
+              <p>Summer Day(Thumbnail Size)</p>
+              <img src= "static/img/Laura_selfie_Th.jpg" alt="Laura_Tb" class="center">
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796" >Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+<!-- Modal Raster -->
+    <div class="modal fade" id="myRaster" role="dialog">
+      <div class="modal-dialog modal-lg" style=" color:#2F5796">    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Raster Image</h4>
+          </div>
+          <div class="modal-body">
+              <p>Summer Day (Web Size).</p>
+              <img src= "static/img/Laura_selfie_Web.jpg" alt="Laura_Rt" >
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796">Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+<!-- Modal Vector -->
+    <div class="modal fade" id="myVector" role="dialog">
+      <div class="modal-dialog modal-lg" style=" color:#2F5796">    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Vector Image</h4>
+          </div>
+          <div class="modal-body">
+              <p>Avatar</p>
+              <img src= "static/img/Laura_vector_600.png" alt="Laura_Vt" >
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796">Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+
+
+<!-- Modal Audio -->
+    <div class="modal fade" id="myAudio1" role="dialog">
+      <div class="modal-dialog modal-lg" style=" color:#2F5796">    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" onclick="pauseAudio()">&times;</button>
+              <h4 class="modal-title">Audio</h4>
+          </div>
+          <div class="modal-body">
+              <p>Summer Day (Audio)</p> 
+                
+              <audio controls id="myAudio">
+                <source src="my_history.ogg" type="audio/ogg"> 
+                <source src="static/audio/my_history.mp3" type="audio/mpeg">         
+              </audio>
+              <img src= "static/img/Laura_selfie_Web.jpg" alt="Laura_Rt" >
+           </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseAudio()" style=" color:#2F5796">Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+
+ 	<div id= informacion>
+      <div id = "myh1">
+                   <h1 >Welcome to Laura Gonzalez Portfolio</h1>                  
+      </div>
+      <div class="centrado">
+
+        <marquee direction="down" width="900" height="400" behavior="alternate" style="border:transparent;">
+            <marquee behavior="alternate">
+                 <img src="static/img/logo.png" alt="Foto Portada"width = "300" >
+            </marquee>
+        </marquee>
+          
+      </div>
+	</div>
+  <div id="footInf">
+       <h5> 2020@Copyright Laura Gonzalez - All Right Reserved</h5>  
+  </div>
+	</div>  <!-- general div-->
+	
+<script>
+var x = document.getElementById("myAudio"); 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+</body>
+</html>
