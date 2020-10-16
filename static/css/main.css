@@ -1,0 +1,65 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#general{
+	margin: auto;
+	margin-top:40px;
+	width: 970px;
+	height: 1000px;
+	background-color: white;
+}
+
+div#logo{
+	/*float:right;*/
+	width: 970px;
+	height: 240px;
+	background-color: white;
+}
+
+div#navegacion{
+	margin-top: 35px;
+	width:970px;
+	height:39px ;
+	background-color: #2196F3 ;
+}
+
+div#informacion{
+	margin: 10px;
+	margin-top: 20px;
+	width:960px;
+	height:530px ;
+	background-color: white ;
+	color: #2F5796;
+}
+div#footInf{
+	color: #2F5796;
+	display: flex;
+ 	justify-content: center;
+}
+
+div#myh1{
+ 	display: flex;
+ 	justify-content: center;
+ } 
+
+ div#myinfo
+ {
+ 	padding:10px;
+ 	margin-left: 50px; 
+ 	margin-right: 40px;
+ 	font-size: 18px; 
+ 	text-align: justify;
+
+ }
+
+ .centrado {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .mybody{
+ 	background-color: #4FD2F9;
+ }
