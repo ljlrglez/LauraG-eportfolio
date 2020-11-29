@@ -162,15 +162,17 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()">&times;</button>
               <h4 class="modal-title">Animation</h4>
           </div>
           <div class="modal-body">
               <p>Undersea World</p>
-              <iframe width="600" height="400" src="static/img/undersea.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <video id="myVideo" width="600" height="400" controls>
+                  <source src="static/img/undersea.mp4" type="video/mp4">
+              </video>
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796">Close</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()" style=" color:#2F5796">Close</button>
           </div>
         </div>      
       </div>
@@ -187,7 +189,7 @@
           </div>
           <div class="modal-body">
               <p>Undersea World</p>
-              <iframe width="600" height="400" src="static/img/undersea.mp4" frameborder="0" allowfullscreen></iframe>
+              <video src="static/img/undersea.mp4" width="600" height="400" controls></video>
           </div>
           <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796">Close</button>
@@ -198,10 +200,9 @@
 
  	<div id= informacion>
       <div id = "myh1">
-                   <h1 >Welcome to Laura Gonzalez Portfolio</h1>                  
+          <h1 >Welcome to Laura Gonzalez Portfolio</h1>                  
       </div>
       <div class="centrado">
-
         <marquee direction="down" width="900" height="400" behavior="alternate" style="border:transparent;">
             <marquee behavior="alternate">
                  <img src="static/img/logo.png" alt="Foto Portada"width = "300" >
@@ -222,6 +223,15 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+
 
 </body>
 </html>

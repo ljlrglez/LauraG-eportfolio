@@ -159,19 +159,21 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" onclick="pauseVid()">&times;</button>
               <h4 class="modal-title">Animation</h4>
           </div>
           <div class="modal-body">
               <p>Undersea World</p>
-              <iframe width="600" height="400" src="static/img/undersea.mp4" frameborder="0" allowfullscreen></iframe>
+              <video id="myVideo" width="600" height="400" controls>
+                  <source src="static/img/undersea.mp4" type="video/mp4">
+              </video>
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal" style=" color:#2F5796">Close</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()" style=" color:#2F5796">Close</button>
           </div>
         </div>      
       </div>
-    </div>      
+    </div>
 
 	<div id= informacion>
       <div id = "myh1">
@@ -199,5 +201,11 @@
      x.pause(); 
       } 
   </script>
+  <script> 
+      var vid = document.getElementById("myVideo"); 
+      function pauseVid() { 
+          vid.pause(); 
+      } 
+  </script> 
 </body>
 </html>
