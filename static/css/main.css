@@ -11,6 +11,14 @@ div#general{
 	background-color: white;
 }
 
+div#general1{
+	margin: auto;
+	margin-top:40px;
+	width: 970px;
+	height: 313px;
+	background-color: white;
+}
+
 div#logo{
 	/*float:right;*/
 	width: 970px;
