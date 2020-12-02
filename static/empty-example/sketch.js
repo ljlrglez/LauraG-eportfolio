@@ -1,12 +1,21 @@
 var diam1 = 15;
 var count = 0;
 let flag = false;
+var cnv;
 
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  // var y = (windowHeight - height) / 2;
+  cnv.position(x, 400);
+}
+
+function windowResized() {
+  centerCanvas();
+}
 
 function setup() {
-  createCanvas(400, 400); 
- 
-  
+  cnv = createCanvas(400, 400); 
+  centerCanvas();
 }
 
 function draw() 

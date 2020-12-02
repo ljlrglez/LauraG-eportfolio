@@ -71,3 +71,8 @@ div#myh1{
  .mybody{
  	background-color: #4FD2F9;
  }
+ .centerScript {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
